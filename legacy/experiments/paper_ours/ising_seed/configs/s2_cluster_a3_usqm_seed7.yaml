@@ -1,0 +1,80 @@
+experiment_name: ising_seed_s2_cluster_a3
+seed: 7
+paths:
+  train_data: ../../../../experiments/data/ising/x_train.csv
+  test_data: ../../../../experiments/data/ising/x_test.csv
+  outputs_dir: outputs_s2_cluster_a3_usqm_seed7
+data:
+  name: ising_seed_s2_cluster_a3
+  visible_bits: 16
+qcbm:
+  device: lightning.qubit
+  sparse: false
+  spin_sym: false
+  bitflip: false
+  optimizer: Adam
+  base_lr: 0.001
+  opt_jit: false
+  loss_jit: false
+  stage_steps: 5000
+  convergence_interval: null
+  monitor_interval: 50
+  select_best_params: false
+  turbo: 25
+  n_ops: 1000
+  n_samples: 3000
+  sigmas:
+  - 1.3183
+  - 0.6006
+  max_batch_ops: null
+  max_batch_samples: null
+  init_scale: 0.1
+  init_param_noise: 0.05
+  new_ancilla_param_noise: 0.05
+  zero_two_body: true
+  noise_all: true
+  noise_dist: uniform
+  noise_m_exp: 0.5
+  ancilla_bits:
+  - 3
+  ancilla_gate_policy: all_subsets
+  training_mode: cluster_weighted_ancilla
+  random_init: false
+  init_from_artifact:
+    outputs_dir: outputs_s2_cluster_a3_init_usqm_seed7
+    ancilla_bits: 3
+  label_condition:
+    labels_path: dataset_s2_cluster_a3_usqm_seed7/y_train.csv
+  cluster_weighted:
+    labels_path: dataset_s2_cluster_a3_usqm_seed7/y_train.csv
+    branch_weights:
+    - 0.1906
+    - 0.0984
+    - 0.0986
+    - 0.1148
+    - 0.108
+    - 0.0992
+    - 0.0942
+    - 0.1962
+    weight_source: train_group_counts
+warmup:
+  enabled_for_ancilla: false
+  fraction: 0.0
+  blocks: 1
+  start_lr_factor: 0.1
+layouts:
+  fully_connected_order2:
+    type: fully_connected
+    max_order: 2
+generation:
+  num_samples: 2000
+  branch_sampler_workers: 1
+evaluation:
+  sigmas:
+  - 2.0
+  - 4.0
+  - 8.0
+  - 16.0
+  max_mmd_samples: 1000
+  random_subset: true
+  analysis_root: analysis_s2_cluster_a3_usqm_seed7

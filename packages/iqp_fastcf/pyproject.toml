@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "iqp_fastcf"
+version = "0.2.0"
+description = "Fast, memory-lean closed-form training of mixed IQP-QCBMs on AMD GPUs (HIP, float64)"
+requires-python = ">=3.9"
+dependencies = ["numpy"]
+
+[project.optional-dependencies]
+reference = ["jax", "optax"]   # the vendored iqp_hip_cf reference engine (fallback for a > 4 or rmax > 10, and tests)
+
+[tool.setuptools]
+packages = ["iqp_fastcf", "iqp_fastcf.iqp_hip_cf"]

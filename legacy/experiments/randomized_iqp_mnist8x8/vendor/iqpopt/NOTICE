@@ -1,0 +1,31 @@
+This folder is a modified copy of IQPopt (https://github.com/XanaduAI/iqpopt),
+distributed under the Apache License, Version 2.0 (see LICENSE in this folder).
+
+Files changed by the authors of this repository:
+
+- iqp_optimizer.py
+  - The default precision is float32. Set IQPOPT_X64=1 for float64, the
+    upstream default.
+  - Expectation values are evaluated in memory-bounded chunks of samples.
+  - A pairwise path is used for large circuits whose generators act on at most
+    two visible qubits. Set IQPOPT_EXACT=1 to use the original path.
+  - The ancilla register can be sampled conditioned on its value, with a given
+    number of samples per branch.
+- training.py
+  - In the scan ("turbo") loop the parameter history is moved to host memory
+    and only the monitored steps are kept.
+  - The step index can be passed to the loss, and an optional callback reports
+    loss components in the progress bar.
+- utils.py
+  - initialize_from_data has two new options, zero_two_body and noise_all. The
+    defaults reproduce the original behaviour.
+- gen_qml/iqp_methods.py
+  - The default precision is float32 unless IQPOPT_X64=1.
+  - The MMD loss functions accept the conditioning arguments condition_mask
+    and condition_values and the argument ops_wires.
+  - The visible operators are placed at their wires without a Python loop.
+
+File added: _test_scan_chunk.py, a self-test of the chunked evaluation.
+
+__init__.py, gen_qml/__init__.py, gen_qml/sample_methods.py and gen_qml/utils.py
+are unchanged.

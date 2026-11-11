@@ -1,0 +1,44 @@
+{
+  "source_raw_dir": "MNIST raw IDX files (torchvision download)",
+  "source": "MNIST train-images/train-labels IDX files",
+  "split": "original MNIST train set first 50000 as train, last 10000 as test, all labels 0..9",
+  "filter_labels": null,
+  "image_shape": [
+    28,
+    28
+  ],
+  "features": 784,
+  "binary_threshold": "pixel / 256 > 0.5 -> 1 else 0",
+  "x_train_shape": [
+    50000,
+    784
+  ],
+  "x_test_shape": [
+    10000,
+    784
+  ],
+  "y_train_class_counts": {
+    "0": 4932,
+    "1": 5678,
+    "2": 4968,
+    "3": 5101,
+    "4": 4859,
+    "5": 4506,
+    "6": 4951,
+    "7": 5175,
+    "8": 4842,
+    "9": 4988
+  },
+  "y_test_class_counts": {
+    "0": 991,
+    "1": 1064,
+    "2": 990,
+    "3": 1030,
+    "4": 983,
+    "5": 915,
+    "6": 967,
+    "7": 1090,
+    "8": 1009,
+    "9": 961
+  }
+}

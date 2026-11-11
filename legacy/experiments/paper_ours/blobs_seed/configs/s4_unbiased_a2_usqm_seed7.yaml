@@ -1,0 +1,64 @@
+experiment_name: blobs_seed_s4_unbiased_a2
+seed: 7
+paths:
+  train_data: ../../../../experiments/data/blobs/x_train.csv
+  test_data: ../../../../experiments/data/blobs/x_test.csv
+  outputs_dir: outputs_s4_unbiased_a2_usqm_seed7
+data:
+  name: blobs_seed_s4_unbiased_a2
+  visible_bits: 16
+warmup:
+  enabled_for_ancilla: false
+  fraction: 0.0
+  blocks: 1
+  start_lr_factor: 0.1
+layouts:
+  fully_connected_order2:
+    type: fully_connected
+    max_order: 2
+generation:
+  num_samples: 2000
+  branch_sampler_workers: 1
+evaluation:
+  sigmas:
+  - 2.0
+  - 4.0
+  - 8.0
+  - 16.0
+  max_mmd_samples: 1000
+  random_subset: true
+  analysis_root: analysis_s4_unbiased_a2_usqm_seed7
+qcbm:
+  device: lightning.qubit
+  sparse: false
+  spin_sym: false
+  bitflip: false
+  optimizer: Adam
+  base_lr: 0.001
+  opt_jit: false
+  loss_jit: false
+  stage_steps: 5000
+  convergence_interval: null
+  monitor_interval: 50
+  select_best_params: true
+  turbo: 25
+  n_ops: 1000
+  n_samples: 3000
+  sigmas:
+  - 1.3183
+  - 0.6006
+  max_batch_ops: null
+  max_batch_samples: null
+  init_scale: 0.1
+  init_param_noise: 0.05
+  new_ancilla_param_noise: 0.05
+  random_init: false
+  zero_two_body: true
+  noise_all: true
+  noise_dist: uniform
+  noise_m_exp: 0.5
+  ancilla_gate_policy: all_subsets
+  ancilla_bits:
+  - 2
+  training_mode: direct_max_ancilla
+  init_mode: unbiased

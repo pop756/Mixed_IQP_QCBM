@@ -1,0 +1,49 @@
+Mixed IQP-QCBM: code and data for "Trainability and Mode Separation of Mixed IQP-QCBMs"
+Copyright 2026 Youngseok Lee and Hyunwoo Kim
+
+The work of the authors in this repository is licensed under the Apache License,
+Version 2.0 (see LICENSE). The third-party material listed below keeps its own
+copyright and license.
+
+1. IQPopt (Apache License 2.0)
+
+   legacy/experiments/randomized_iqp_mnist8x8/vendor/iqpopt/ is a modified copy of
+   IQPopt, https://github.com/XanaduAI/iqpopt. The LICENSE and NOTICE files in that
+   folder give the license text and the list of changes.
+
+2. scaling-gqml (Apache License 2.0)
+
+   The files below are copied unchanged from the folder paper/datasets of
+   https://github.com/XanaduAI/scaling-gqml, the repository of E. Recio-Armengol,
+   S. Ahmed, and J. Bowles, "Train on classical, deploy on quantum: scaling
+   generative quantum machine learning to a thousand qubits", arXiv:2503.02934.
+
+     experiments/datasets/blobs/8_blobs_dataset/
+     experiments/datasets/ising/2d_random_lattice_dataset/
+     experiments/datasets/dwave/download_data.py
+
+   experiments/data/blobs/ and experiments/data/ising/ hold the same training and
+   test strings in a shuffled order (numpy default_rng(1234)).
+
+3. D-Wave spin-glass configurations (Creative Commons Attribution 4.0 International)
+
+   experiments/datasets/dwave/dwave_X_train.csv and dwave_X_test.csv are derived from
+   G. Scriva, E. Costa, B. McNaughton, and S. Pilati, Data for "Accelerating
+   equilibrium spin-glass simulations using quantum annealers via generative deep
+   learning", Zenodo (2022), https://zenodo.org/records/7250436.
+   Changes: download_data.py takes the 484-spin configurations, keeps the first
+   10,000 training configurations and all test configurations, flattens each to
+   484 values, and maps the spins -1 and +1 to the bits 0 and 1.
+
+4. MNIST (Creative Commons Attribution-Share Alike 3.0)
+
+   experiments/datasets/MNIST_28x28_all/ is derived from the MNIST database of
+   handwritten digits (Y. LeCun, C. Cortes, and C. J. C. Burges; Y. LeCun, L. Bottou,
+   Y. Bengio, and P. Haffner, Proc. IEEE 86, 2278 (1998)). Yann LeCun and Corinna
+   Cortes hold the copyright of the MNIST database, which is made available under
+   the Creative Commons Attribution-Share Alike 3.0 license,
+   https://creativecommons.org/licenses/by-sa/3.0/.
+   Changes: the first 50,000 images of the MNIST training set form the training
+   split and its last 10,000 images the test split, and a pixel value p becomes 1
+   if p / 256 > 0.5 and 0 otherwise (metadata.json). These derived files are
+   distributed under the same license.

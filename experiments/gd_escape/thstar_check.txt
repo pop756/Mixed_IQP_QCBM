@@ -1,0 +1,28 @@
+blobs  stored point   loss 1.832503e-02  |grad| 2.8e-05  polished 1.832502e-02  moved by 5.1e-05 rad
+blobs  random start  0 polished 2.551202e-02
+blobs  random start  1 polished 2.094409e-02
+blobs  random start  2 polished 1.774414e-02
+blobs  random start  3 polished 2.569420e-02
+blobs  random start  4 polished 4.828632e-02
+blobs  random start  5 polished 6.229705e-02
+blobs  random start  6 polished 6.395790e-02
+blobs  random start  7 polished 2.573818e-02
+blobs  random start  8 polished 4.862823e-02
+blobs  random start  9 polished 5.139251e-02
+blobs  random start 10 polished 2.567112e-02
+blobs  random start 11 polished 1.911692e-02
+blobs  lowest single-circuit loss found 1.774414e-02  (stored point 1.832503e-02)
+ising  stored point   loss 5.139738e-04  |grad| 9.5e-06  polished 5.139727e-04  moved by 5.3e-05 rad
+ising  random start  0 polished 3.552287e-02
+ising  random start  1 polished 1.448812e-02
+ising  random start  2 polished 2.118354e-02
+ising  random start  3 polished 9.472300e-03
+ising  random start  4 polished 4.126876e-02
+ising  random start  5 polished 5.278471e-04
+ising  random start  6 polished 2.060529e-02
+ising  random start  7 polished 1.883848e-02
+ising  random start  8 polished 2.405718e-02
+ising  random start  9 polished 5.460436e-04
+ising  random start 10 polished 1.904491e-02
+ising  random start 11 polished 5.554006e-04
+ising  lowest single-circuit loss found 5.139727e-04  (stored point 5.139738e-04)

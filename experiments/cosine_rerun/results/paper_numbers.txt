@@ -1,0 +1,275 @@
+ref blobs | 0.2529e-3 | results/refs.csv ref_train_vs_test, mean over m-bar
+test blobs a0 global | 17.28 ± 0.31 (x1e-3, n=10) | runs/blobs/a0_main.json test[15000]
+test blobs a0 agnostic | 17.25 ± 0.27 (x1e-3, n=10) | runs/blobs/a0_main.json test[15000]
+test blobs a1 global | 11.63 ± 0.83 (x1e-3, n=10) | runs/blobs/a1_main.json test[15000]
+test blobs a1 agnostic | 11.37 ± 0.95 (x1e-3, n=10) | runs/blobs/a1_main.json test[15000]
+test blobs a1 cluster | 10.28 ± 0.11 (x1e-3, n=10) | runs/blobs/a1_main.json test[15000]
+cluster<global seeds blobs a1 | 10/10 | runs/blobs/a1_main.json paired by seed
+ratio cluster/global blobs a1 | 0.884 | seed means
+test blobs a2 global | 2.85 ± 0.83 (x1e-3, n=10) | runs/blobs/a2_main.json test[15000]
+test blobs a2 agnostic | 5.414 ± 1.8 (x1e-3, n=10) | runs/blobs/a2_main.json test[15000]
+test blobs a2 cluster | 1.561 ± 0.77 (x1e-3, n=10) | runs/blobs/a2_main.json test[15000]
+cluster<global seeds blobs a2 | 8/10 | runs/blobs/a2_main.json paired by seed
+ratio cluster/global blobs a2 | 0.548 | seed means
+test blobs a3 global | 0.5886 ± 0.4 (x1e-3, n=10) | runs/blobs/a3_main.json test[15000]
+test blobs a3 agnostic | 1.543 ± 0.69 (x1e-3, n=10) | runs/blobs/a3_main.json test[15000]
+test blobs a3 cluster | 0.24 ± 0.00024 (x1e-3, n=10) | runs/blobs/a3_main.json test[15000]
+cluster<global seeds blobs a3 | 10/10 | runs/blobs/a3_main.json paired by seed
+ratio cluster/global blobs a3 | 0.408 | seed means
+test@250 blobs a3 global | 3.001 ± 0.45 (x1e-3, n=10) | runs/blobs/a3_main.json test[250]
+test@250 blobs a3 agnostic | 8.668 ± 1.2 (x1e-3, n=10) | runs/blobs/a3_main.json test[250]
+test@250 blobs a3 cluster | 0.2454 ± 0.0022 (x1e-3, n=10) | runs/blobs/a3_main.json test[250]
+test@1000 blobs a3 global | 1.335 ± 0.4 (x1e-3, n=10) | runs/blobs/a3_main.json test[1000]
+test@1000 blobs a3 agnostic | 2.315 ± 0.74 (x1e-3, n=10) | runs/blobs/a3_main.json test[1000]
+test@1000 blobs a3 cluster | 0.2395 ± 0.0018 (x1e-3, n=10) | runs/blobs/a3_main.json test[1000]
+test@5000 blobs a3 global | 0.5906 ± 0.41 (x1e-3, n=10) | runs/blobs/a3_main.json test[5000]
+test@5000 blobs a3 agnostic | 1.592 ± 0.62 (x1e-3, n=10) | runs/blobs/a3_main.json test[5000]
+test@5000 blobs a3 cluster | 0.2421 ± 0.003 (x1e-3, n=10) | runs/blobs/a3_main.json test[5000]
+one-body blobs a3 | 0.2258 ± 0.00012 (x1e-3, n=10) | runs/blobs/a3_fc1.json
+one-body/full ratio blobs a3 | 0.939-0.942 (mean 0.941), paired over 10 seeds | fc1 / main cluster
+one-body/full per mbar blobs a3 | 0.933 0.939 0.947 0.949 0.945 0.928 | seed means per m-bar = 1..6
+ref ising | 0.1777e-3 | results/refs.csv ref_train_vs_test, mean over m-bar
+test ising a0 global | 0.51 ± 0.012 (x1e-3, n=10) | runs/ising/a0_main.json test[15000]
+test ising a0 agnostic | 0.51 ± 0.012 (x1e-3, n=10) | runs/ising/a0_main.json test[15000]
+test ising a1 global | 0.5866 ± 0.27 (x1e-3, n=10) | runs/ising/a1_main.json test[15000]
+test ising a1 agnostic | 0.5019 ± 0.0094 (x1e-3, n=10) | runs/ising/a1_main.json test[15000]
+test ising a1 cluster | 0.2517 ± 0.0048 (x1e-3, n=10) | runs/ising/a1_main.json test[15000]
+cluster<global seeds ising a1 | 10/10 | runs/ising/a1_main.json paired by seed
+ratio cluster/global ising a1 | 0.429 | seed means
+test ising a2 global | 0.2177 ± 0.14 (x1e-3, n=10) | runs/ising/a2_main.json test[15000]
+test ising a2 agnostic | 0.1829 ± 0.11 (x1e-3, n=10) | runs/ising/a2_main.json test[15000]
+test ising a2 cluster | 0.1471 ± 0.0031 (x1e-3, n=10) | runs/ising/a2_main.json test[15000]
+cluster<global seeds ising a2 | 7/10 | runs/ising/a2_main.json paired by seed
+ratio cluster/global ising a2 | 0.676 | seed means
+test ising a3 global | 0.1478 ± 0.0065 (x1e-3, n=10) | runs/ising/a3_main.json test[15000]
+test ising a3 agnostic | 0.1468 ± 0.0064 (x1e-3, n=10) | runs/ising/a3_main.json test[15000]
+test ising a3 cluster | 0.1433 ± 0.0011 (x1e-3, n=10) | runs/ising/a3_main.json test[15000]
+cluster<global seeds ising a3 | 8/10 | runs/ising/a3_main.json paired by seed
+ratio cluster/global ising a3 | 0.970 | seed means
+test@250 ising a3 global | 0.6374 ± 0.062 (x1e-3, n=10) | runs/ising/a3_main.json test[250]
+test@250 ising a3 agnostic | 0.6379 ± 0.063 (x1e-3, n=10) | runs/ising/a3_main.json test[250]
+test@250 ising a3 cluster | 0.2652 ± 0.021 (x1e-3, n=10) | runs/ising/a3_main.json test[250]
+test@1000 ising a3 global | 0.2134 ± 0.012 (x1e-3, n=10) | runs/ising/a3_main.json test[1000]
+test@1000 ising a3 agnostic | 0.2133 ± 0.012 (x1e-3, n=10) | runs/ising/a3_main.json test[1000]
+test@1000 ising a3 cluster | 0.1622 ± 0.0076 (x1e-3, n=10) | runs/ising/a3_main.json test[1000]
+test@5000 ising a3 global | 0.1552 ± 0.012 (x1e-3, n=10) | runs/ising/a3_main.json test[5000]
+test@5000 ising a3 agnostic | 0.1551 ± 0.011 (x1e-3, n=10) | runs/ising/a3_main.json test[5000]
+test@5000 ising a3 cluster | 0.1455 ± 0.0032 (x1e-3, n=10) | runs/ising/a3_main.json test[5000]
+one-body ising a3 | 0.4649 ± 0.0052 (x1e-3, n=10) | runs/ising/a3_fc1.json
+one-body/full ratio ising a3 | 3.17-3.29 (mean 3.24), paired over 10 seeds | fc1 / main cluster
+one-body/full per mbar ising a3 | 2.9 3.58 3.66 3.43 3.01 2.53 | seed means per m-bar = 1..6
+ref mnist | 0.2378e-3 | results/refs.csv ref_train_vs_test, mean over m-bar
+test mnist a0 global | 1.019 ± 0.0027 (x1e-3, n=5) | runs/mnist/a0_main.json test[15000]
+test mnist a0 agnostic | 1.038 ± 0.01 (x1e-3, n=5) | runs/mnist/a0_main.json test[15000]
+test mnist a1 global | 0.7546 ± 0.0035 (x1e-3, n=5) | runs/mnist/a1_main.json test[15000]
+test mnist a1 agnostic | 0.821 ± 0.078 (x1e-3, n=5) | runs/mnist/a1_main.json test[15000]
+test mnist a1 cluster | 0.7506 ± 0.0021 (x1e-3, n=5) | runs/mnist/a1_main.json test[15000]
+cluster<global seeds mnist a1 | 4/5 | runs/mnist/a1_main.json paired by seed
+ratio cluster/global mnist a1 | 0.995 | seed means
+test mnist a2 global | 0.5882 ± 0.023 (x1e-3, n=5) | runs/mnist/a2_main.json test[15000]
+test mnist a2 agnostic | 8.359 ± 0.028 (x1e-3, n=5) | runs/mnist/a2_main.json test[15000]
+test mnist a2 cluster | 0.5682 ± 0.0055 (x1e-3, n=5) | runs/mnist/a2_main.json test[15000]
+cluster<global seeds mnist a2 | 4/5 | runs/mnist/a2_main.json paired by seed
+ratio cluster/global mnist a2 | 0.966 | seed means
+test mnist a3 global | 0.4561 ± 0.0042 (x1e-3, n=5) | runs/mnist/a3_main.json test[15000]
+test mnist a3 agnostic | 16.3 ± 9.4 (x1e-3, n=5) | runs/mnist/a3_main.json test[15000]
+test mnist a3 cluster | 0.4391 ± 0.004 (x1e-3, n=5) | runs/mnist/a3_main.json test[15000]
+cluster<global seeds mnist a3 | 5/5 | runs/mnist/a3_main.json paired by seed
+ratio cluster/global mnist a3 | 0.963 | seed means
+test mnist a4 global | 0.3669 ± 0.0021 (x1e-3, n=5) | runs/mnist/a4_main.json test[15000]
+test mnist a4 agnostic | 15.43 ± 4.4 (x1e-3, n=5) | runs/mnist/a4_main.json test[15000]
+test mnist a4 cluster | 0.3538 ± 0.0024 (x1e-3, n=5) | runs/mnist/a4_main.json test[15000]
+cluster<global seeds mnist a4 | 5/5 | runs/mnist/a4_main.json paired by seed
+ratio cluster/global mnist a4 | 0.964 | seed means
+test@250 mnist a4 global | 0.7323 ± 0.0093 (x1e-3, n=5) | runs/mnist/a4_main.json test[250]
+test@250 mnist a4 agnostic | 66.67 ± 6 (x1e-3, n=5) | runs/mnist/a4_main.json test[250]
+test@250 mnist a4 cluster | 0.4989 ± 0.0077 (x1e-3, n=5) | runs/mnist/a4_main.json test[250]
+test@1000 mnist a4 global | 0.5587 ± 0.015 (x1e-3, n=5) | runs/mnist/a4_main.json test[1000]
+test@1000 mnist a4 agnostic | 23.61 ± 4.6 (x1e-3, n=5) | runs/mnist/a4_main.json test[1000]
+test@1000 mnist a4 cluster | 0.4899 ± 0.011 (x1e-3, n=5) | runs/mnist/a4_main.json test[1000]
+test@5000 mnist a4 global | 0.4581 ± 0.012 (x1e-3, n=5) | runs/mnist/a4_main.json test[5000]
+test@5000 mnist a4 agnostic | 16.73 ± 3.8 (x1e-3, n=5) | runs/mnist/a4_main.json test[5000]
+test@5000 mnist a4 cluster | 0.4319 ± 0.0065 (x1e-3, n=5) | runs/mnist/a4_main.json test[5000]
+one-body mnist a4 | 0.7644 ± 0.0083 (x1e-3, n=5) | runs/mnist/a4_fc1.json
+one-body/full ratio mnist a4 | 2.14-2.18 (mean 2.16), paired over 5 seeds | fc1 / main cluster
+one-body/full per mbar mnist a4 | 1.35 1.77 2.06 2.16 2.41 2.45 | seed means per m-bar = 1..6
+ref dwave | 0.08874e-3 | results/refs.csv ref_train_vs_test, mean over m-bar
+test dwave a0 global | 5.158 ± 1.6 (x1e-3, n=5) | runs/dwave/a0_main.json test[15000]
+test dwave a0 agnostic | 5.823 ± 1.1 (x1e-3, n=5) | runs/dwave/a0_main.json test[15000]
+test dwave a1 global | 1.592 ± 0.19 (x1e-3, n=5) | runs/dwave/a1_main.json test[15000]
+test dwave a1 agnostic | 1.57 ± 0.21 (x1e-3, n=5) | runs/dwave/a1_main.json test[15000]
+test dwave a1 cluster | 2.398 ± 0.35 (x1e-3, n=5) | runs/dwave/a1_main.json test[15000]
+cluster<global seeds dwave a1 | 0/5 | runs/dwave/a1_main.json paired by seed
+ratio cluster/global dwave a1 | 1.506 | seed means
+test dwave a2 global | 0.8332 ± 0.066 (x1e-3, n=5) | runs/dwave/a2_main.json test[15000]
+test dwave a2 agnostic | 0.8218 ± 0.09 (x1e-3, n=5) | runs/dwave/a2_main.json test[15000]
+test dwave a2 cluster | 1.178 ± 0.099 (x1e-3, n=5) | runs/dwave/a2_main.json test[15000]
+cluster<global seeds dwave a2 | 0/5 | runs/dwave/a2_main.json paired by seed
+ratio cluster/global dwave a2 | 1.414 | seed means
+test dwave a3 global | 0.4963 ± 0.044 (x1e-3, n=5) | runs/dwave/a3_main.json test[15000]
+test dwave a3 agnostic | 0.5162 ± 0.06 (x1e-3, n=5) | runs/dwave/a3_main.json test[15000]
+test dwave a3 cluster | 0.75 ± 0.077 (x1e-3, n=5) | runs/dwave/a3_main.json test[15000]
+cluster<global seeds dwave a3 | 0/5 | runs/dwave/a3_main.json paired by seed
+ratio cluster/global dwave a3 | 1.511 | seed means
+test@250 dwave a3 global | 6.857 ± 0.1 (x1e-3, n=5) | runs/dwave/a3_main.json test[250]
+test@250 dwave a3 agnostic | 7.444 ± 0.18 (x1e-3, n=5) | runs/dwave/a3_main.json test[250]
+test@250 dwave a3 cluster | 1.295 ± 0.095 (x1e-3, n=5) | runs/dwave/a3_main.json test[250]
+test@1000 dwave a3 global | 3.18 ± 0.53 (x1e-3, n=5) | runs/dwave/a3_main.json test[1000]
+test@1000 dwave a3 agnostic | 3.41 ± 0.78 (x1e-3, n=5) | runs/dwave/a3_main.json test[1000]
+test@1000 dwave a3 cluster | 0.9893 ± 0.08 (x1e-3, n=5) | runs/dwave/a3_main.json test[1000]
+test@5000 dwave a3 global | 0.6094 ± 0.073 (x1e-3, n=5) | runs/dwave/a3_main.json test[5000]
+test@5000 dwave a3 agnostic | 0.6128 ± 0.058 (x1e-3, n=5) | runs/dwave/a3_main.json test[5000]
+test@5000 dwave a3 cluster | 0.8669 ± 0.086 (x1e-3, n=5) | runs/dwave/a3_main.json test[5000]
+one-body dwave a3 | 3.057 ± 0.13 (x1e-3, n=5) | runs/dwave/a3_fc1.json
+one-body/full ratio dwave a3 | 3.54-4.34 (mean 4.1), paired over 5 seeds | fc1 / main cluster
+one-body/full per mbar dwave a3 | 4.73 4.36 4.24 3.99 3.91 3.68 | seed means per m-bar = 1..6
+product center blobs a3 | 0.2263 ± 0 (x1e-3) | legacy bernoulli_baseline/summary.csv (exact evaluation)
+product em blobs a3 | 0.2286 ± 1.5e-07 (x1e-3) | legacy bernoulli_baseline/summary.csv (exact evaluation)
+product em blobs a0 | 34.04e-3 | legacy summary.csv
+product em blobs a1 | 26.07e-3 | legacy summary.csv
+product em blobs a2 | 17.24e-3 | legacy summary.csv
+product em blobs a3 | 0.2286e-3 | legacy summary.csv
+product center ising a3 | 2.419 ± 0.1 (x1e-3) | legacy bernoulli_baseline/summary.csv (exact evaluation)
+product em ising a3 | 0.5423 ± 1.4e-05 (x1e-3) | legacy bernoulli_baseline/summary.csv (exact evaluation)
+product em ising a0 | 49.73e-3 | legacy summary.csv
+product em ising a1 | 6.523e-3 | legacy summary.csv
+product em ising a2 | 1.191e-3 | legacy summary.csv
+product em ising a3 | 0.5423e-3 | legacy summary.csv
+product center mnist a0 | 4.621 ± 0 (x1e-3, n=1) | results/product_baselines_mnist.csv
+product em mnist a0 | 4.639 ± 0 (x1e-3, n=1) | results/product_baselines_mnist.csv
+product center mnist a1 | 3.337 ± 0.0016 (x1e-3, n=5) | results/product_baselines_mnist.csv
+product em mnist a1 | 3.471 ± 3.7e-09 (x1e-3, n=5) | results/product_baselines_mnist.csv
+product center mnist a2 | 2.518 ± 0.012 (x1e-3, n=5) | results/product_baselines_mnist.csv
+product em mnist a2 | 2.547 ± 6.1e-07 (x1e-3, n=5) | results/product_baselines_mnist.csv
+product center mnist a3 | 1.847 ± 0.0077 (x1e-3, n=5) | results/product_baselines_mnist.csv
+product em mnist a3 | 1.869 ± 6.4e-08 (x1e-3, n=5) | results/product_baselines_mnist.csv
+product center mnist a4 | 1.347 ± 0.011 (x1e-3, n=5) | results/product_baselines_mnist.csv
+product em mnist a4 | 1.358 ± 0.0075 (x1e-3, n=5) | results/product_baselines_mnist.csv
+product center dwave a0 | 32.41 ± 0 (x1e-3, n=1) | results/product_baselines_dwave.csv
+product em dwave a0 | 32.41 ± 0 (x1e-3, n=1) | results/product_baselines_dwave.csv
+product center dwave a1 | 15.32 ± 2e-15 (x1e-3, n=5) | results/product_baselines_dwave.csv
+product em dwave a1 | 18.7 ± 1e-09 (x1e-3, n=5) | results/product_baselines_dwave.csv
+product center dwave a2 | 9.035 ± 0 (x1e-3, n=5) | results/product_baselines_dwave.csv
+product em dwave a2 | 7.832 ± 7.7e-07 (x1e-3, n=5) | results/product_baselines_dwave.csv
+product center dwave a3 | 4.612 ± 0.52 (x1e-3, n=5) | results/product_baselines_dwave.csv
+product em dwave a3 | 3.791 ± 0.026 (x1e-3, n=5) | results/product_baselines_dwave.csv
+EM/trained-cluster blobs a1 | 2.54 | EM mean / cluster seed mean
+EM/trained-cluster blobs a2 | 11 | EM mean / cluster seed mean
+EM/trained-cluster blobs a3 | 0.952 | EM mean / cluster seed mean
+EM/trained-cluster ising a1 | 25.9 | EM mean / cluster seed mean
+EM/trained-cluster ising a2 | 8.1 | EM mean / cluster seed mean
+EM/trained-cluster ising a3 | 3.78 | EM mean / cluster seed mean
+EM/trained-cluster mnist a1 | 4.62 | EM mean / cluster seed mean
+EM/trained-cluster mnist a2 | 4.48 | EM mean / cluster seed mean
+EM/trained-cluster mnist a3 | 4.26 | EM mean / cluster seed mean
+EM/trained-cluster mnist a4 | 3.84 | EM mean / cluster seed mean
+EM/trained-cluster dwave a1 | 7.8 | EM mean / cluster seed mean
+EM/trained-cluster dwave a2 | 6.65 | EM mean / cluster seed mean
+EM/trained-cluster dwave a3 | 5.05 | EM mean / cluster seed mean
+zero2b mnist | 2.121 ± 0.045 (x1e-3, n=5); factor 5.88-6.1 | results/zero2b.csv
+zero2b dwave | 8.753 ± 1.7 (x1e-3, n=5); factor 10.6-13.3 | results/zero2b.csv
+eq-peak blobs a1 global | 16.4 ± 0.15 (x1e-3, n=3) | runs/blobs/a1_{main,eq}.json max over m-bar
+eq-mean blobs a1 global | 12.26 ± 0.16 (x1e-3, n=3) | mean over m-bar
+eq-peak blobs a1 cluster | 14.13 ± 0.025 (x1e-3, n=3) | runs/blobs/a1_{main,eq}.json max over m-bar
+eq-mean blobs a1 cluster | 10.24 ± 0.015 (x1e-3, n=3) | mean over m-bar
+eq-peak blobs a1 cluster_eq | 13.81 ± 0.12 (x1e-3, n=3) | runs/blobs/a1_{main,eq}.json max over m-bar
+eq-mean blobs a1 cluster_eq | 10.25 ± 0.021 (x1e-3, n=3) | mean over m-bar
+eq-peak blobs a2 global | 4.711 ± 0.25 (x1e-3, n=3) | runs/blobs/a2_{main,eq}.json max over m-bar
+eq-mean blobs a2 global | 3.404 ± 0.15 (x1e-3, n=3) | mean over m-bar
+eq-peak blobs a2 cluster | 2.302 ± 0.98 (x1e-3, n=3) | runs/blobs/a2_{main,eq}.json max over m-bar
+eq-mean blobs a2 cluster | 1.8 ± 0.68 (x1e-3, n=3) | mean over m-bar
+eq-peak blobs a2 cluster_eq | 2.167 ± 0.0098 (x1e-3, n=3) | runs/blobs/a2_{main,eq}.json max over m-bar
+eq-mean blobs a2 cluster_eq | 1.673 ± 0.0088 (x1e-3, n=3) | mean over m-bar
+eq-peak ising a2 global | 0.1832 ± 0.0031 (x1e-3, n=3) | runs/ising/a2_{main,eq}.json max over m-bar
+eq-mean ising a2 global | 0.1515 ± 0.0026 (x1e-3, n=3) | mean over m-bar
+eq-peak ising a2 cluster | 0.1718 ± 0.0032 (x1e-3, n=3) | runs/ising/a2_{main,eq}.json max over m-bar
+eq-mean ising a2 cluster | 0.1457 ± 0.0025 (x1e-3, n=3) | mean over m-bar
+eq-peak ising a2 cluster_eq | 0.1742 ± 0.0067 (x1e-3, n=3) | runs/ising/a2_{main,eq}.json max over m-bar
+eq-mean ising a2 cluster_eq | 0.1461 ± 0.004 (x1e-3, n=3) | mean over m-bar
+eq-peak ising a3 global | 0.1761 ± 0.012 (x1e-3, n=3) | runs/ising/a3_{main,eq}.json max over m-bar
+eq-mean ising a3 global | 0.1462 ± 0.0083 (x1e-3, n=3) | mean over m-bar
+eq-peak ising a3 cluster | 0.1704 ± 0.0031 (x1e-3, n=3) | runs/ising/a3_{main,eq}.json max over m-bar
+eq-mean ising a3 cluster | 0.1437 ± 0.002 (x1e-3, n=3) | mean over m-bar
+eq-peak ising a3 cluster_eq | 0.1729 ± 0.0023 (x1e-3, n=3) | runs/ising/a3_{main,eq}.json max over m-bar
+eq-mean ising a3 cluster_eq | 0.1445 ± 0.00078 (x1e-3, n=3) | mean over m-bar
+eq-peak mnist a4 global | 0.4934 ± 0.0047 (x1e-3, n=5) | runs/mnist/a4_{main,eq}.json max over m-bar
+eq-mean mnist a4 global | 0.3669 ± 0.0021 (x1e-3, n=5) | mean over m-bar
+eq-peak mnist a4 cluster | 0.4732 ± 0.002 (x1e-3, n=5) | runs/mnist/a4_{main,eq}.json max over m-bar
+eq-mean mnist a4 cluster | 0.3538 ± 0.0024 (x1e-3, n=5) | mean over m-bar
+eq-peak mnist a4 cluster_eq | 0.473 ± 0.0037 (x1e-3, n=5) | runs/mnist/a4_{main,eq}.json max over m-bar
+eq-mean mnist a4 cluster_eq | 0.3535 ± 0.0027 (x1e-3, n=5) | mean over m-bar
+eq-peak dwave a3 global | 0.6226 ± 0.04 (x1e-3, n=5) | runs/dwave/a3_{main,eq}.json max over m-bar
+eq-mean dwave a3 global | 0.4963 ± 0.044 (x1e-3, n=5) | mean over m-bar
+eq-peak dwave a3 cluster | 0.9294 ± 0.097 (x1e-3, n=5) | runs/dwave/a3_{main,eq}.json max over m-bar
+eq-mean dwave a3 cluster | 0.75 ± 0.077 (x1e-3, n=5) | mean over m-bar
+eq-peak dwave a3 cluster_eq | 0.9138 ± 0.052 (x1e-3, n=5) | runs/dwave/a3_{main,eq}.json max over m-bar
+eq-mean dwave a3 cluster_eq | 0.7471 ± 0.042 (x1e-3, n=5) | mean over m-bar
+N_mode blobs global | 6.07 ± 0.63 | results/mode_index.csv
+N_mode blobs cluster | 7.75 ± 0.00 | results/mode_index.csv
+N_mode blobs agnostic | 5.33 ± 0.82 | results/mode_index.csv
+spearman D2-mmd2 blobs | -0.93 (-0.97, -0.83) | mode_index.csv, 10^4 bootstrap, seed 12345
+spearman Nmode-mmd2 blobs | -0.89 (-0.94, -0.74) | mode_index.csv, 10^4 bootstrap, seed 12345
+spearman Nmode-D2 blobs | +0.93 | mode_index.csv
+D2 blobs global | 0.243 ± 0.041 | results/branch_diversity.csv
+D2 blobs cluster | 0.345 ± 0.000 | results/branch_diversity.csv
+D2 blobs agnostic | 0.186 ± 0.056 | results/branch_diversity.csv
+N_mode ising global | 2.37 ± 0.51 | results/mode_index.csv
+N_mode ising cluster | 2.78 ± 0.15 | results/mode_index.csv
+N_mode ising agnostic | 2.45 ± 0.47 | results/mode_index.csv
+spearman D2-mmd2 ising | -0.61 (-0.78, -0.31) | mode_index.csv, 10^4 bootstrap, seed 12345
+spearman Nmode-mmd2 ising | -0.57 (-0.77, -0.28) | mode_index.csv, 10^4 bootstrap, seed 12345
+spearman Nmode-D2 ising | +0.75 | mode_index.csv
+D2 ising global | 0.100 ± 0.050 | results/branch_diversity.csv
+D2 ising cluster | 0.139 ± 0.001 | results/branch_diversity.csv
+D2 ising agnostic | 0.111 ± 0.039 | results/branch_diversity.csv
+N_mode mnist global | 15.23 ± 0.14 | results/mode_index.csv
+N_mode mnist cluster | 15.05 ± 0.10 | results/mode_index.csv
+N_mode mnist agnostic | 13.34 ± 0.33 | results/mode_index.csv
+spearman D2-mmd2 mnist | +0.17 (-0.54, +0.70) | mode_index.csv, 10^4 bootstrap, seed 12345
+spearman Nmode-mmd2 mnist | -0.49 (-0.79, +0.12) | mode_index.csv, 10^4 bootstrap, seed 12345
+spearman Nmode-D2 mnist | -0.67 | mode_index.csv
+D2 mnist global | 0.116 ± 0.003 | results/branch_diversity.csv
+D2 mnist cluster | 0.120 ± 0.000 | results/branch_diversity.csv
+D2 mnist agnostic | 0.121 ± 0.003 | results/branch_diversity.csv
+N_mode dwave global | 5.54 ± 0.68 | results/mode_index.csv
+N_mode dwave cluster | 7.74 ± 0.02 | results/mode_index.csv
+N_mode dwave agnostic | 5.69 ± 0.57 | results/mode_index.csv
+spearman D2-mmd2 dwave | +0.92 (+0.72, +0.99) | mode_index.csv, 10^4 bootstrap, seed 12345
+spearman Nmode-mmd2 dwave | +0.73 (+0.34, +0.93) | mode_index.csv, 10^4 bootstrap, seed 12345
+spearman Nmode-D2 dwave | +0.83 | mode_index.csv
+D2 dwave global | 0.087 ± 0.020 | results/branch_diversity.csv
+D2 dwave cluster | 0.239 ± 0.006 | results/branch_diversity.csv
+D2 dwave agnostic | 0.085 ± 0.023 | results/branch_diversity.csv
+mnist agnostic a1 | 0.751-0.94 x1e-3; >2x a0 global: 0/5 | runs/mnist/a*_main.json
+mnist agnostic a2 | 8.33-8.4 x1e-3; >2x a0 global: 5/5 | runs/mnist/a*_main.json
+mnist agnostic a3 | 7.33-30.3 x1e-3; >2x a0 global: 5/5 | runs/mnist/a*_main.json
+mnist agnostic a4 | 11.4-22.1 x1e-3; >2x a0 global: 5/5 | runs/mnist/a*_main.json
+q_eff max k<=6 blobs L=8 | median 0.25, q95 0.36 | results/factorization_residuals.csv
+witness heavy blobs L=8 | 0.23 (worst 0.23) | factorization_residuals.csv
+q_eff max k<=6 ising L=8 | median 0.38, q95 0.51 | results/factorization_residuals.csv
+witness heavy ising L=8 | 0.28 (worst 0.26) | factorization_residuals.csv
+q_eff max k<=6 mnist L=16 | median 0.32, q95 0.58 | results/factorization_residuals.csv
+witness heavy mnist L=16 | 1.00 (worst 1.00) | factorization_residuals.csv
+q_eff max k<=6 dwave L=8 | median 0.36, q95 0.71 | results/factorization_residuals.csv
+witness heavy dwave L=8 | 1.00 (worst 1.00) | factorization_residuals.csv
+eq vs cluster mnist a4 | Wilcoxon p=0.62, eq higher on 2/5 seeds | runs/mnist/a4_{eq,main}.json
+eq vs cluster dwave a3 | Wilcoxon p=1.00, eq higher on 3/5 seeds | runs/dwave/a3_{eq,main}.json
+mnist agnostic a4 seed 7 | 6 near-uniform branches (> half the pixels within 0.25 of 1/2), test share 0.2435 | mnist_branch_marginals.npz
+mnist agnostic a4 seed 11 | 6 near-uniform branches (> half the pixels within 0.25 of 1/2), test share 0.2531 | mnist_branch_marginals.npz
+mnist agnostic a4 seed 23 | 5 near-uniform branches (> half the pixels within 0.25 of 1/2), test share 0.1806 | mnist_branch_marginals.npz
+mnist agnostic a4 seed 1234 | 5 near-uniform branches (> half the pixels within 0.25 of 1/2), test share 0.1628 | mnist_branch_marginals.npz
+mnist agnostic a4 seed 2025 | 7 near-uniform branches (> half the pixels within 0.25 of 1/2), test share 0.2872 | mnist_branch_marginals.npz
+dwave a3 training-loss crossing | global mean below cluster mean from step 2700 | runs/dwave/a3_main.json train_loss_50
+ising a2 global seed 314 test | 0.4901e-3 | runs/ising/a2_main.json
+ising a2 agnostic seed 314 test | 0.4901e-3 | runs/ising/a2_main.json
+ising a2 cluster seed 11 test | 0.142e-3 | runs/ising/a2_main.json
+eq-peak vs cluster blobs a1 | Wilcoxon p=nan, eq higher on 0/3 | max over m-bar
+eq-peak vs cluster blobs a2 | Wilcoxon p=nan, eq higher on 1/3 | max over m-bar
+eq-peak vs cluster ising a2 | Wilcoxon p=nan, eq higher on 1/3 | max over m-bar
+eq-peak vs cluster ising a3 | Wilcoxon p=nan, eq higher on 3/3 | max over m-bar
+eq-peak vs cluster mnist a4 | Wilcoxon p=1.00, eq higher on 2/5 | max over m-bar
+eq-peak vs cluster dwave a3 | Wilcoxon p=1.00, eq higher on 3/5 | max over m-bar
+kernel weight with |A| > 10 blobs | max over m-bar 0.0112 (m-bar=6) | Binomial(n, m-bar/n) tail
+kernel weight with |A| > 10 ising | max over m-bar 0.0112 (m-bar=6) | Binomial(n, m-bar/n) tail
+kernel weight with |A| > 10 mnist | max over m-bar 0.0420 (m-bar=6) | Binomial(n, m-bar/n) tail
+kernel weight with |A| > 10 dwave | max over m-bar 0.0416 (m-bar=6) | Binomial(n, m-bar/n) tail

@@ -1,0 +1,8 @@
+[trend D2] blobs  n=30  rho=-0.93  95% CI [-0.97, -0.83]
+[trend D2] ising  n=30  rho=-0.61  95% CI [-0.78, -0.32]
+[trend D2] dwave  n=15  rho=+0.92  95% CI [+0.72, +0.99]
+[trend D2] mnist  n=15  rho=+0.17  95% CI [-0.55, +0.69]
+[trend Nmode] blobs  n=30  rho=-0.89  95% CI [-0.94, -0.74]
+[trend Nmode] ising  n=30  rho=-0.57  95% CI [-0.78, -0.28]
+[trend Nmode] dwave  n=15  rho=+0.73  95% CI [+0.31, +0.93]
+[trend Nmode] mnist  n=15  rho=-0.49  95% CI [-0.79, +0.14]

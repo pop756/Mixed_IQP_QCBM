@@ -1,0 +1,203 @@
+{
+ "csv": {
+  "path": "experiments/cosine_rerun/results/branch_necessity.csv",
+  "sha256": "38d26b81356b77c46b0705b358fe8a4473d7b3341f2998320980700f45c8b6aa"
+ },
+ "blobs": {
+  "models": 30,
+  "L": 8,
+  "rho_lambda": -0.9719688542825362,
+  "rho_D2": -0.9332591768631814,
+  "rho_U": -0.9706340378197997,
+  "rho_lambda_U": 0.9982202447163514,
+  "bound_uniform": "20/20",
+  "rho_lambda_kept": -0.9719688542825362,
+  "rho_D2_kept": -0.9332591768631814,
+  "schemes": {
+   "global": {
+    "seeds": 10,
+    "mmd2_mean": 0.00025805108290020946,
+    "lambda_min": 6.345084514077262,
+    "lambda_max": 36.60043159701439,
+    "U_min": 7.3386384110630205,
+    "U_max": 38.251048830710154,
+    "harmful_min": 0,
+    "harmful_max": 0,
+    "w_harmful_min": 0.0,
+    "w_harmful_max": 0.0
+   },
+   "agnostic": {
+    "seeds": 10,
+    "mmd2_mean": 0.0006556002258714499,
+    "lambda_min": 3.5713122599217995,
+    "lambda_max": 41.68441889740964,
+    "U_min": 3.913414216694908,
+    "U_max": 42.8911992618794,
+    "harmful_min": 0,
+    "harmful_max": 0,
+    "w_harmful_min": 0.0,
+    "w_harmful_max": 0.0
+   },
+   "cluster": {
+    "seeds": 10,
+    "mmd2_mean": 0.00015546403255975677,
+    "lambda_min": 45.772660202130034,
+    "lambda_max": 46.094980628918876,
+    "U_min": 46.11530302266076,
+    "U_max": 46.442370388600786,
+    "harmful_min": 0,
+    "harmful_max": 0,
+    "w_harmful_min": 0.0,
+    "w_harmful_max": 0.0
+   }
+  }
+ },
+ "ising": {
+  "models": 30,
+  "L": 4,
+  "rho_lambda": -0.7112347052280311,
+  "rho_D2": -0.6053392658509456,
+  "rho_U": -0.7784204671857619,
+  "rho_lambda_U": 0.9759733036707454,
+  "bound_uniform": "20/20",
+  "rho_lambda_kept": -0.7112347052280311,
+  "rho_D2_kept": -0.6053392658509456,
+  "schemes": {
+   "global": {
+    "seeds": 10,
+    "mmd2_mean": 0.0002765500855063171,
+    "lambda_min": 1.2838023530654643,
+    "lambda_max": 54.943872853870886,
+    "U_min": 1.2969804302217227,
+    "U_max": 85.1424350051895,
+    "harmful_min": 0,
+    "harmful_max": 0,
+    "w_harmful_min": 0.0,
+    "w_harmful_max": 0.0
+   },
+   "agnostic": {
+    "seeds": 10,
+    "mmd2_mean": 0.00022628254849611876,
+    "lambda_min": 1.274235344132009,
+    "lambda_max": 55.02409778733491,
+    "U_min": 1.2861353043651662,
+    "U_max": 85.23836998149152,
+    "harmful_min": 0,
+    "harmful_max": 0,
+    "w_harmful_min": 0.0,
+    "w_harmful_max": 0.0
+   },
+   "cluster": {
+    "seeds": 10,
+    "mmd2_mean": 0.00017087629120462488,
+    "lambda_min": 93.94599971290396,
+    "lambda_max": 98.33266692450177,
+    "U_min": 89.31618831493884,
+    "U_max": 94.47188191342065,
+    "harmful_min": 0,
+    "harmful_max": 0,
+    "w_harmful_min": 0.0,
+    "w_harmful_max": 0.0
+   }
+  }
+ },
+ "dwave": {
+  "models": 15,
+  "L": 8,
+  "rho_lambda": 0.8499999999999999,
+  "rho_D2": 0.9178571428571428,
+  "rho_U": 0.8357142857142855,
+  "rho_lambda_U": 0.9535714285714283,
+  "bound_uniform": "10/10",
+  "rho_lambda_kept": 0.8499999999999999,
+  "rho_D2_kept": 0.9178571428571428,
+  "schemes": {
+   "global": {
+    "seeds": 5,
+    "mmd2_mean": 0.00043639871656456523,
+    "lambda_min": 4.053828794609662,
+    "lambda_max": 5.079557688818648,
+    "U_min": 4.1421473481851745,
+    "U_max": 5.622281587393856,
+    "harmful_min": 0,
+    "harmful_max": 0,
+    "w_harmful_min": 0.0,
+    "w_harmful_max": 0.0
+   },
+   "agnostic": {
+    "seeds": 5,
+    "mmd2_mean": 0.0004613692271578301,
+    "lambda_min": 3.537445330482569,
+    "lambda_max": 5.507864148025122,
+    "U_min": 3.591160550897474,
+    "U_max": 5.782421478328538,
+    "harmful_min": 0,
+    "harmful_max": 0,
+    "w_harmful_min": 0.0,
+    "w_harmful_max": 0.0
+   },
+   "cluster": {
+    "seeds": 5,
+    "mmd2_mean": 0.0006500680228308353,
+    "lambda_min": 8.201527062408895,
+    "lambda_max": 9.939431890661972,
+    "U_min": 7.771853601620112,
+    "U_max": 9.491632372285999,
+    "harmful_min": 0,
+    "harmful_max": 0,
+    "w_harmful_min": 0.0,
+    "w_harmful_max": 0.0
+   }
+  }
+ },
+ "mnist": {
+  "models": 15,
+  "L": 16,
+  "rho_lambda": -0.9535714285714283,
+  "rho_D2": 0.175,
+  "rho_U": -0.982142857142857,
+  "rho_lambda_U": 0.9785714285714284,
+  "bound_uniform": "10/10",
+  "rho_lambda_kept": -0.8787878787878788,
+  "rho_D2_kept": -0.8303030303030302,
+  "schemes": {
+   "global": {
+    "seeds": 5,
+    "mmd2_mean": 0.0002622228266784616,
+    "lambda_min": 2.854896898847823,
+    "lambda_max": 3.0028486976997137,
+    "U_min": 2.8974404565100933,
+    "U_max": 3.0393555565792685,
+    "harmful_min": 0,
+    "harmful_max": 0,
+    "w_harmful_min": 0.0,
+    "w_harmful_max": 0.0
+   },
+   "agnostic": {
+    "seeds": 5,
+    "mmd2_mean": 0.022782731313572346,
+    "lambda_min": 1.0018234566261435,
+    "lambda_max": 1.0057386016087246,
+    "U_min": 1.0165804741136781,
+    "U_max": 1.0306671534310459,
+    "harmful_min": 5,
+    "harmful_max": 7,
+    "w_harmful_min": 0.3125,
+    "w_harmful_max": 0.4375
+   },
+   "cluster": {
+    "seeds": 5,
+    "mmd2_mean": 0.00025633602686257143,
+    "lambda_min": 3.056156589506012,
+    "lambda_max": 3.1060120872562145,
+    "U_min": 3.0539873299557825,
+    "U_max": 3.1078795255618,
+    "harmful_min": 0,
+    "harmful_max": 0,
+    "w_harmful_min": 0.0,
+    "w_harmful_max": 0.0
+   }
+  },
+  "failed_over_others": 87.86941408095956
+ }
+}

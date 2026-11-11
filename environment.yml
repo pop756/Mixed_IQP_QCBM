@@ -1,0 +1,34 @@
+# Environment of the Mixed IQP-QCBM repository (conda env "iqpopt").
+# As written it installs the CPU build of jax. That is enough for the figure scripts, the exact 16-qubit
+# calculations and the reruns of the earlier pipeline (REPRODUCE.md).
+# packages/iqp_fastcf (training and the evaluator of the campaign) needs an AMD GPU through ROCm. For it,
+# replace jax[cpu] with the ROCm build:
+#   pip install jax==0.6.0 jaxlib==0.6.0 jax-rocm7-pjrt jax-rocm7-plugin
+# The article's runs used one AMD Instinct MI300X. iqp_fastcf does not run on a CUDA build of jax.
+# The tests need pytest in addition: pip install pytest
+name: iqpopt
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - numpy>=2.0
+      - scipy>=1.10
+      - pandas>=2.0
+      - scikit-learn>=1.3
+      - networkx>=3.0
+      - pyyaml>=6.0
+      - tqdm>=4.0
+      - matplotlib>=3.7
+      - "jax[cpu]==0.6.0"      # see the header for the GPU build
+      - jaxopt==0.8.5
+      - optax==0.2.8
+      - torch                  # CPU build suffices (RBM baseline, start artifacts)
+      - pennylane==0.44.1
+      - pennylane-lightning==0.44.0   # correlator evaluation in the modified IQPopt copy (lightning.qubit)
+      - cvxpy>=1.3             # optional path in the modified IQPopt copy
+      # the blobs and Ising generators in experiments/datasets/ need qml-benchmarks:
+      #   pip install --no-deps git+https://github.com/XanaduAI/qml-benchmarks.git
+      - numpyro>=0.13          # only for regenerating the Ising source data (MCMC)
+      - joblib>=1.2

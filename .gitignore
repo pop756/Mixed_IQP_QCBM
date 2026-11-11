@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+*_preview.png
+experiments/*/params/
+experiments/*/logs/
+legacy/experiments/paper_ours/*_seed/outputs_s2_cluster_a*_init_usqm_seed*/
+legacy/experiments/paper_ours/baselines/rerun_*/
